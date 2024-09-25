@@ -4,29 +4,24 @@ int main() {
     int studenti, studenti_minori, numgratuiti;
     float costobiglietto, costototale, costoscontato;
 
-    // Lettura del numero di studenti
     printf("Inserisci il numero totale di studenti: ");
     scanf("%d", &studenti);
 
-    // Lettura del numero di studenti con meno di 15 anni
     printf("Inserisci il numero di studenti con meno di 15 anni: ");
     scanf("%d", &studenti_minori);
 
-    // Lettura del costo del biglietto
     printf("Inserisci il costo del biglietto: ");
     scanf("%f", &costobiglietto);
 
-    // Calcolo del numero di gratuità
     numgratuiti = studenti / 12;
 
-    // Calcolo del costo scontato per gli studenti con meno di 15 anni
+    
     costoscontato = costobiglietto * 0.6;
 
-    // Calcolo del costo totale
+    
     costototale = (studenti - numgratuiti - studenti_minori) * costobiglietto +
                    studenti_minori* costoscontato;
 
-    // Stampa del costo totale
     printf("L'importo totale da pagare è: %.2f euro\n", costototale);
 
     return 0;
