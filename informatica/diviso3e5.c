@@ -9,34 +9,37 @@ int main()
     scanf("%f", &a);
 
 
-    if(a %3== 0)
+    if(a%3== 0)
 	{ 
-		printf(" %f è divisibile per 3 ", a);  
+		printf(" è divisibile per 3 ", a);  
 	}
-	else 
-	{
-		printf(" %f non è divisibile per 3 ", a);
-	}
+  
 
-    if(a %5== 0)
-	{ 
-		printf(" %f è divisibile per 5 ", a);  
-	}
-	else 
-	{
-		printf(" %f non è divisibile per 5 ", a);
-	}
+  else 
+  
+  
+  
+  
+	{	if(a%5== 0)
+	    { 
+		printf(" è divisibile per 5 ", a);
+      } 
+  }
 
-    if(a %3== 0, a %5== 0)
-	{ 
-		printf(" %f è divisibile per 3 e per 5 ", a);  
-	}
-	else 
-	{
-		printf("%f non è divisibile ne per 3 ne per 5 ", a);
-	}
-   
-    
 
+  56
+        
+        
+        
+   { if(a%3== 0, a%5== 0)   
+        {
+          printf(" è divisibile per 5 e per 3", a);  
+
+        }
+   }
+	
+  
+        
+	
     return 0;
 }
