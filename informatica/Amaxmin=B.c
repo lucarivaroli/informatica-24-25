@@ -17,20 +17,20 @@ int main()
 
 	if(a == b)
 	{ 
-		printf("il primo valore %d è uguale del secondo %d");  
+		printf("il primo valore %d è uguale del secondo %d", a,b);  
 	}
 	else 
     {
         if(a < b)
         {
-            printf("il primo valore %d è minore del secondo");
+            printf("il primo valore %d è minore del secondo", a,b);
 
         }
         else
         {
             if(a > b)
             {
-                printf("il primo valore %d è maggiore del secondo");
+                printf("il primo valore %d è maggiore del secondo", a,b);
             }
 	
         }
