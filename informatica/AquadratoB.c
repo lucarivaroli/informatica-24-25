@@ -23,7 +23,7 @@ int main()
 	}
 	else 
 	{
-		printf("il primo valore %f non è il quadrato del secondo %f", a,b)
+		printf("il primo valore %f non è il quadrato del secondo %f", a,b);
 	}
 
 		return 0;
