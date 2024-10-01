@@ -1,3 +1,5 @@
+/*verificare se un numero dato in input è divisibile sia per 3 e per 5*/
+
 #include <stdio.h>
 
 int main() {
