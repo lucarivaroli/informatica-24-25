@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main()
 { 
-	float a,b,c,media;	
+	float a=0,b=0,c=0,media=0,min=0,max=0;	
 	
 	
 	
@@ -14,31 +14,32 @@ int main()
     printf("inserisci il terzo valore:");
 	scanf("%f",&c);
 	
-	media= (a+b+c)/3;
+	media=(float) (a+b+c)/3;
 	
 
-	if(a>b>c);
+	/*if(a>b>c);
 	{ 
 		printf("%f è il numero maggiore", a);
         printf("%f è il numero maggiore", c);
 	}
 	else 
-	{
+	
 		if(b>c>a);
-        {
-        printf("%f è il numero maggiore", b);
-        printf("%f è il numero maggiore", a);
-        }
-	}
-
-    else
     {
-        printf("%f è il numero maggiore", c);
-        printf("%f è il numero maggiore", b);
+      	printf("%f è il numero maggiore", b);
+        printf("%f è il numero maggiore", a);
     }
+	
+
+	else
+	{
+			printf("%f è il numero maggiore", c);
+			printf("%f è il numero maggiore", b);
+	}
 
     printf("la media dei tre valori è", media);
 
 		return 0;
 	
+} DA FINIRE*/
 }
