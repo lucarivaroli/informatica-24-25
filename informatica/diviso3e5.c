@@ -11,7 +11,7 @@ int main()
     scanf("%d", &A);
 
     
-    if (A % 3 == 0 & A % 5 == 0) 
+    if (A % 3 == 0 && A % 5 == 0) 
     {
         printf("Il numero %d è divisibile sia per 3 che per 5", A);
     } 
