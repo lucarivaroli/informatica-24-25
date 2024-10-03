@@ -57,6 +57,8 @@
   "C_Cpp_Runner.useLinkTimeOptimization": false,
   "C_Cpp_Runner.msvcSecureNoWarnings": false,
   "files.associations": {
-    "triangolo_equilatero": "c"
+    "triangolo_equilatero": "c",
+    "prova.C": "cpp",
+    "triang_equil.C": "cpp"
   }
 }
