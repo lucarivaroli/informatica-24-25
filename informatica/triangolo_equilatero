@@ -1,12 +1,12 @@
 #include <stdio.h>
 int main()
 { 
-	int l1, l2, l3, h;
+	int l1, l2, l3;
 	
 	l1=0;
 	l2=0;
 	l3=0;
-	h=0;
+	
 
 	
 	
@@ -19,10 +19,12 @@ int main()
 	printf("inserisci il terzo lato:");
 	scanf("%d",&l3);
 
-	if(l1==l2==l3){
+	if(l1==l2 && l2==l3){
 		printf("il triangolo è equilatero");
 		float perimetro=l1+l2+l3;
-		float area=(h*l1)/2
+		printf("il perimetro del triangolo é:",perimetro);
+		float area=(l1*l1*1.73)/4;
+		printf("l'area del triangolo è:",area);
 	} else{
 		printf("il triangolo non è equilatero");
 	}
