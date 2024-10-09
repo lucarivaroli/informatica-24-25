@@ -26,7 +26,7 @@ int main() {
     scanf("%d", &e);
 
   
-    if ( b == a+1 && c == b+1 && d == c+1 && e == c+1) 
+    if ( b == a+1 && c == b+1 && d == c+1 && e == d+1) 
     {
         printf("i numeri sono in sequenza.\n");
     }
