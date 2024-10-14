@@ -6,29 +6,32 @@ int main() {
     int o2, m2, s2;
 
  
-    printf("Inserisci la prima data (gg mm aaaa): ");
+    printf("Inserisci la prima ora (gg mm aaaa): ");
     scanf("%d %d %d", &o1, &m1, &s1);
 
-    printf("Inserisci la seconda data (gg mm aaaa): ");
+    printf("Inserisci la seconda ora (gg mm aaaa): ");
     scanf("%d %d %d", &o2, &m2, &s2);
 
  
-    if (a1 > a2) {
-        printf("La data più recente è: %02d/%02d/%04d\n", g1, m1, a1);
-    } else if (a1 < a2) {
-        printf("La data più recente è: %02d/%02d/%04d\n", g2, m2, a2);
+    if(s1<60 && m1<60 && o1<24 && s2<60 && m2<60 && o2<24)
+    
+    
+    if (o1 > o2) {
+        printf("La ora più recente è: %02d %02d %04d\n", o1, m1, s1);
+    } else if (o1 < o2) {
+        printf("La ora più recente è: %02d %02d %04d\n", o2, m2, s2);
     } else {
         if (m1 > m2) {
-            printf("La data più recente è: %02d/%02d/%04d\n", g1, m1, a1);
+            printf("La ora più recente è: %02d %02d %04d\n", o1, m1, s1);
         } else if (m1 < m2) {
-            printf("La data più recente è: %02d/%02d/%04d\n", g2, m2, a2);
+            printf("La ora più recente è: %02d %02d %04d\n", o2, m2, s2);
         } else {
-            if (g1 > g2) {
-                printf("La data più recente è: %02d/%02d/%04d\n", g1, m1, a1);
-            } else if (g1 < g2) {
-                printf("La data più recente è: %02d/%02d/%04d\n", g2, m2, a2);
+            if (s1 > s2) {
+                printf("La ora più recente è: %02d %02d %04d\n", o1, m1, s1);
+            } else if (s1 < s2) {
+                printf("La ora più recente è: %02d %02d %04d\n", o2, m2, s2);
             } else {
-                printf("Le due date sono uguali.\n");
+                printf("Le due ore sono uguali.\n");
             }
         }
     }
