@@ -42,8 +42,5 @@ int main() {
         printf("l'orario non e valido: ");
     }
     
-    
-    
-   
     return 0;
 }
