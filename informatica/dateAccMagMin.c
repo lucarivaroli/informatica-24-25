@@ -108,21 +108,36 @@ int main() {
     }
       
     
-    if (a1 > a2) {
+    if (a1 > a2) 
+    {
         printf("La data più recente è: %02d/%02d/%04d\n", g1, m1, a1);
-    } else if (a1 < a2) {
+    } 
+    else if (a1 < a2) 
+    {
         printf("La data più recente è: %02d/%02d/%04d\n", g2, m2, a2);
-    } else {
-        if (m1 > m2) {
+    } 
+    else 
+    {
+        if (m1 > m2) 
+        {
             printf("La data più recente è: %02d/%02d/%04d\n", g1, m1, a1);
-        } else if (m1 < m2) {
+        } 
+        else if (m1 < m2) 
+        {
             printf("La data più recente è: %02d/%02d/%04d\n", g2, m2, a2);
-        } else {
-            if (g1 > g2) {
+        } 
+        else 
+        {
+            if (g1 > g2) 
+            {
                 printf("La data più recente è: %02d/%02d/%04d\n", g1, m1, a1);
-            } else if (g1 < g2) {
+            } 
+            else if (g1 < g2) 
+            {
                 printf("La data più recente è: %02d/%02d/%04d\n", g2, m2, a2);
-            } else {
+            } 
+            else 
+            {
                 printf("Le due date sono uguali.\n");
             }
         }
