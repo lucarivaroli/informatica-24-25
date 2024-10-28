@@ -5,7 +5,7 @@ delle cifre e poi controllate se il risultato è divisibile per 3. • Creare un
 tramite dei printf per la scelta dell'operazione da compiere tra due valori generati casualmente( eseguendo 
 lì dove c'è bisogno gli opportuni controlli). Comunicare il risultato dell'operazione o la scelta dell'utente d
 i non fare niente e uscire dal programma:ES: "Seleziona l'operazione da eseguire:
-0.TERMINA 1.SOMMA 2.DIFFERENZA 3.MOLTIPLICAZIONE  4.DIVISIONE " */
+0.TERMINA 1.SOMMA 2.DIFFERENZA 3.MOLTIPLICAZIONE 4.DIVISIONE " */
 
 #include <stdio.h>
 #include <stdlib.h>
