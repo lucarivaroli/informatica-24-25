@@ -27,7 +27,7 @@ int main() {
     srand(time(NULL));
     n1=rand() %50 +1;//genera numeri casuali tra 1 e 50
     n2=rand() %50 +1;
-    
+    printf("%2.f %2.f", n1, n2)
 
     
     switch (scelta) {
