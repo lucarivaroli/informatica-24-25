@@ -22,6 +22,8 @@ int main() {
     // Genera la scelta del computer
     scelta_computer = rand() % 3 + 1;
 
+    if(scelta_utente==1 || scelta_utente==2||scelta_utente==3 ){
+    
     // Mostra le scelte
     printf("Hai scelto: ");
     switch (scelta_utente) {
@@ -47,6 +49,9 @@ int main() {
         printf("Hai vinto!\n");
     } else {
         printf("Hai perso!\n");
+    }}
+    else{
+        printf("scelta non valida");
     }
 
     return 0;
