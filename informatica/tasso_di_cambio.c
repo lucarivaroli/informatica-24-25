@@ -11,8 +11,8 @@ Data una somma di denaro calcolare il controvalore.*/
 
 int main() {
     int scelta;
-    double somma, risultato;
-    double tassoc = 1.23;
+    float somma, risultato;
+    const float tassoc = 1.23;
 
     printf("Seleziona l'operazione:\n");
     printf("1. Convertire Dollari in Euro\n");
@@ -22,12 +22,12 @@ int main() {
 
     if (scelta == 1) {
         printf("Inserisci la somma in Dollari: ");
-        scanf("%lf", &somma);
+        scanf("%f", &somma);
         risultato = somma / tassoc;
         printf("Il controvalore in Euro è: %.2f\n", risultato);
     } else if (scelta == 2) {
         printf("Inserisci la somma in Euro: ");
-        scanf("%lf", &somma);
+        scanf("%f", &somma);
         risultato = somma * tassoc;
         printf("Il controvalore in Dollari è: %.2f\n", risultato);
     } else {
