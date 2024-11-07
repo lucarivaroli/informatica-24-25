@@ -8,12 +8,12 @@ da 2 cifre e k compare 1 volta*/
 #include <stdio.h>
 int main()
 {
-    int n;
+    int numero;
     int unita;
     int decine, nd;
     int centinaia, nc;
     int migliaia;
-    int k;
+    
 
     printf("inserisci un numero:\n");
     scanf("%d", &n);
@@ -27,12 +27,24 @@ int main()
     }
 
 
+    int cifre = 0;
+    if (numero < 10) {
+        cifre = 1;
+    } else if (numero < 100) {
+        cifre = 2;
+    } else if (numero < 1000) {
+        cifre = 3;
+    } else if (numero < 10000) {
+        cifre = 4;
+    }
+    printf("il numero e composto da: %d", cifre);
 
-    migliaia = n %1000;
-    centinaia = n - migliaia % 1000;
-    decine = n % 10;
-    
-    unita = decine %10;
+    migliaia = numero / 1000;
+    nc = numero - migliaia * 1000;
+    centinaia = nc / 100;
+    nd = nc - centinaia * 100;
+    decine = nd / 10;
+    unita = nd - decine * 10;
     
     
     
