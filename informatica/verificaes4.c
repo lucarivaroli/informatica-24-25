@@ -8,9 +8,9 @@ int main(){
     int flag=0;
 
     printf("inserisci il numero");
-    scanf("%d", n1);
+    scanf("%d", &n1);
 
-    ope=n1%2
+    ope=n1%2;
     if(ope==0)
     {
         flag=1

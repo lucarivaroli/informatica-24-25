@@ -94,8 +94,6 @@ int main()
             printf("i due numeri non sono multipli");
         }
     break;
-
-
     
     default:
        
