@@ -1,0 +1,10 @@
+-per inizializzare la partizione virtuale
+    mount t:/tasm/bin
+-"dir" per creare ovisualizzare il contenuto della cartella
+-"cls" per pulire il terminale
+-"rescan" per aggiornare i contenuti delle cartelle
+- "tasm" per compilare il file 
+- "dir E03.*" si cerca un file specifico
+- "tasm E03.asm" per aprire il file evdere errori
+-"tlink" serve per linkare il file
+-"dir E03.*" si converte il file
