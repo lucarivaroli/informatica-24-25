@@ -4,14 +4,15 @@ L’ESPONENTE.*/
 int main(){
     int n1=0;
     int esponente=0;
-    int ope, ope1, ope2, ope3, ope4;
+    int quoziente;
+    int resto;
     int flag=0;
 
     printf("inserisci il numero");
     scanf("%d", &n1);
+    quoziente =numero;
 
-    ope=n1%2;
-    if(ope==0)
+    if(numero)
     {
         flag=1
         ope1= ope/2

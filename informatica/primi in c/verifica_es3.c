@@ -13,12 +13,11 @@ int main()
 {
     int n1=0;
     int n2=0;
-    int temp;
+    int k;
     int scelta;
-    int opes;
-    int temp;
     int somma;
-    int ope3:
+    int scarto1:
+    int scarto2;
     
 
     printf("inserisci il primo numero:\n");
@@ -42,35 +41,27 @@ int main()
             printf("la somma dei due valori e:%d\n", somma);
     break;
     case 2:
-        if(n1>n2){
-            n1=temp;
-            n1=n2
-            n2=temp
-            opes= n1-n2
-            printf("la sottrazione e:%d\n", opes):
-        }else if(n2>n1){
-            n2=temp;
-            n2=n1;
-            n1=temp;
-            opes=n2-n1;
-            printf("la sottrazione e:%d\n", opes);
+        if(n1>n2)
+        {
+            printf("la sottrazione e:%d\n", n1-n2):
+        }
+        else
+        {
+            printf("la sottrazione e:%d\n", n2-n1);
         }
     break;
     case 3:
         srand(time(NULL));
+        k= rand()%9 +0;
 
-        int random_max=50;
-        int random min=1;
-        int k= rand()%random_max+random_min;
-
-        print("il numero corrisponde", k)
+        print("valore di k:\n %d", k)
 
         int minore;
         int maggiore;
         float ope1=0;
         float ope2=0;
-        ope1=k-n1;
-        ope2=k-n2;
+        scarto1=n1-k;
+        scarto2=n2-k;
 
         if(ope1>ope2){
             printf("il primo numero e piu vicino");
@@ -80,11 +71,9 @@ int main()
         }
     break;
     case 4:
-        int ope4
-        ope3=(float)n1%n2;
-        ope4=(float)n2%n1
-        if(ope3==0){
-            printf("il secondo numero e multiplo del primo");
+        if(n1>=n2){
+            if(n1%n2==0 && n1!=n2)
+            printf("il primo numero e multiplo del secondo");
         }
         else if(ope4==0){
             printf("il primo numero e multiplo del secondo");
@@ -98,3 +87,4 @@ int main()
     default:
        
     }
+
