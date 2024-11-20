@@ -5,6 +5,7 @@ printf("il valore di k e: \n", k);
 
 scarto1=n1-k;
 scarto2=n2-k;
+
 //se uno dei due scarti e negativo ce da fare *(-1)
 if(scarto1<scarto2)
     printf("il numero che si avvicina di piu è %d", n1);
@@ -20,6 +21,7 @@ break;
         cntc++;
         printf("la cifra delle unita vale %d", r);
         printf("il numero e composto da %d cifre", cnt);
+
 /*comunicare il numero di cifre e comunicare qaunte volte compare la cifra(k)*/
     q=numero
     if(q!=0)
@@ -29,6 +31,7 @@ break;
         printf("la cifra delle unita vale %d", r);
         if(r==k)//se il resto (quindi la cifra ) e uguale il valore di k(inserito dall'utente), cntk lo conta 
             cntk++;
+
 /*sommare un numero ad un'altro e fare la media*/
     printf
     scanf
