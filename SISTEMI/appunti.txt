@@ -1,5 +1,5 @@
 -per inizializzare la partizione virtuale
-    mount t:/tasm/bin
+    mount t: z:/tasm/bin
 -"dir" per creare ovisualizzare il contenuto della cartella
 -"cls" per pulire il terminale
 -"rescan" per aggiornare i contenuti delle cartelle
