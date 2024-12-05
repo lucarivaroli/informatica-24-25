@@ -1,0 +1,2 @@
+/*calcolare il quoziente fra due numeri 
+applicando il metodo delle sottrazioni successive*/
