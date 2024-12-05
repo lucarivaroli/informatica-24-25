@@ -32,7 +32,7 @@ int main(){
         cnt++;
         somma=somma+n;
 
-    } while (n==0);
+    } while (n!=0);
     
     
 
