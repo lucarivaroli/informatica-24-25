@@ -59,7 +59,8 @@
   "files.associations": {
     "triangolo_equilatero": "c",
     "prova.C": "cpp",
-    "triang_equil.C": "cpp"
+    "triang_equil.C": "cpp",
+    "PAGELLA.C": "cpp"
   },
   "C_Cpp.errorSquiggles": "disabled"
 }
