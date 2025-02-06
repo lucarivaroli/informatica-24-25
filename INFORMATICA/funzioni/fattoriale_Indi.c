@@ -1,26 +1,28 @@
 /*calcolare il fattoriale di un numero*/
 #include <stdio.h>
 
-long fattoriale(int *_n);
+void fattoriale(int *_n, long *_fatt);
 
 int main(){
     int num=0;
+    long fatt=1;
 
     printf("inserisci il numero: ");
     scanf("%d", &num);
 
-    fattoriale(&num);
+    fattoriale (&num, &fatt); //parametro effettivo
 
 }
 
-long fattoriale(int *_n){
-    int i=0;
-    long fattoriale=1;
+void fattoriale(int *_n, long *_fatt){
+    int i=1;
+    long sumfatt=1;
 
     
     for (int i = 1; i <= *_n; i++)
     {
-        fattoriale*=i;
+        sumfatt*=i;
     }
     printf("il fattoriale di %d numero e %ld", *_n, fattoriale);
+    return sumfat;
 }
