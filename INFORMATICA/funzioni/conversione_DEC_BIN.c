@@ -12,8 +12,8 @@ int main(){
         scanf("%d", &n);
     } while (n<=0);
 
-    conv=converti(n)
-    printf("%d/n", conv);
+    conv=converti(n);
+    printf("%d /n", conv);
     
 }
 long converti(int _n){
@@ -24,9 +24,8 @@ long converti(int _n){
     {
         resto=quoz%2;
         quoz=quoz/2;
-        _conv=pow(10,cont);
+        _conv+=resto*pow(10,cont);
         cont++;
-
     }
-    
+    return _conv;
 }
