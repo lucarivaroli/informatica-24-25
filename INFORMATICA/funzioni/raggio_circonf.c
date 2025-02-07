@@ -10,16 +10,16 @@ int main(){
     float area=0;
 
     printf("inserisci il raggio: ");
-    scanf("%d", &raggio);
+    scanf("%f", &raggio);
 
     circonf(&raggio, &diametro, &area);
+
+    printf("il diametro è: %.2f\n", diametro);
+    printf("l'area è: %.2f\n", area);
+    return 0;
 }
 
 void circonf(float *_raggio, float *_diametro, float *_area){
-    *_diametro=2*(*_raggio);
-    *_area=pigreco*(*_raggio)*(*_raggio);
-    
-
-    
-    
+    *_diametro=2*(*_raggio)*pigreco;
+    *_area=pigreco*(*_raggio)*(*_raggio);  
 }
