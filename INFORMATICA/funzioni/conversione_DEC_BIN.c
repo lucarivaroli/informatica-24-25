@@ -2,7 +2,9 @@
 
 #include <stdio.h>
 #include <math.h>
+
 long converti(int _n);
+
 int main(){
     int n=0;
     long conv=0; 
@@ -13,7 +15,7 @@ int main(){
     } while (n<=0);
 
     conv=converti(n);
-    printf("%d /n", conv);
+    printf("%ld /n", conv);
     
 }
 long converti(int _n){

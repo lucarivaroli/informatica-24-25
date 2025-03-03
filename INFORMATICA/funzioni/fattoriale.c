@@ -21,6 +21,7 @@ long fattoriale(int _n){
     for (int i = 1; i <= _n; i++)
     {
         fattoriale*=i;
+        printf("%d %d", i, fattoriale);
     }
     printf("il fattoriale di %d numero e %ld", _n, fattoriale);
 }
