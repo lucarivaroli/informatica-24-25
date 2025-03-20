@@ -35,3 +35,11 @@ int sommaVettore(int vettore[], int dim);
  * @param int dim dimensione del vettore
  * @return int somma dei valori del vettore
  */
+
+int contaValore(int vettore[], int dim, int valore);
+/**funzione che conta quante volte un valore compare in un vettore
+ * @param int vettore[] vettore in cui cercare il valore
+ * @param int dim dimensione del vettore
+ * @param int valore valore da cercare
+ * @return int numero di volte in cui il valore compare nel vettore
+ */

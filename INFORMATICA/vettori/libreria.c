@@ -39,3 +39,13 @@ int sommaVettore(int vettore[], int dim){
 float mediaVettore(int vettore[], int dim){
     return (float)sommaVettore(vettore, dim)/dim;
 }
+
+int contaValore(int vettore[], int dim, int valore){
+    int contatore=0;
+    for(int i=0; i<dim; i++){
+        if(vettore[i]==valore){
+            contatore++;
+        }
+    }
+    return contatore;
+}
