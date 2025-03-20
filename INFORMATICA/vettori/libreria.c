@@ -8,6 +8,7 @@ void richiediValori(int vettore[], int dim){
         scanf("%d", &n);
         if(n%2==0){
             vettore[i]=n;
+        }
     }
 }
 
