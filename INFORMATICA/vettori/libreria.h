@@ -1,12 +1,12 @@
 /*
     PROTOTIPI DELLE FUNZIONI
 */
-void stampaVettore(int vettore[], int dim, char sep);
-/**funzione che stampa un vettore
- * @param int vettore[] vettore da stampare
- * @param int dim dimensione del vettore
- * @param char sep separatore tra i valori
+/**
+ * funzione che riempie un vettore con valori scelti dall'utente.
+ * @param int [] vettore di interi 
+ * @param int dimensione del vettore 
  */
+void riempiVettore(int vettore[], int dim);
 
 void richiediValori(int vettore[], int dim);
 /**funzione che richiede i valori da inserire in un vettore
