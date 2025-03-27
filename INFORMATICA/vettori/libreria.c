@@ -72,6 +72,22 @@ int ricercaBinaria(int vettore[], int dim, int estInf, int estSup, int valore){
         return ricercaBinaria( vettore,dim, media+1, estSup, valore);
 }
 
+int trovaPosizione (int vett[], int dim, int num){
+    int i=0;
+    while(vett[i]<num && i<dim){
+        i++;
+    }
+    return i;
+}
+
+
+void shiftDx (int vett[], int dim, int pos){
+    for(int i=dim; i>pos; i--){
+        vett[i]=vett[i-1];
+    }
+}
+
+
 void riempiVettoreOrdinatoCasuale(int vett[], int dim, int minimo, int massimo) {
     srand(time(NULL));
     int num, pos;
@@ -84,17 +100,6 @@ void riempiVettoreOrdinatoCasuale(int vett[], int dim, int minimo, int massimo) 
     }
 }
 
-void shiftDx (int vett[], int dim, int pos){
-    for(int i=dim; i>pos; i--){
-        vett[i]=vett[i-1];
-    }
-}
 
 
-int trovaPosizione (int vett[], int dim, int num){
-    int i=0;
-    while(vett[i]<num && i<dim){
-        i++;
-    }
-    return i;
-}
+
