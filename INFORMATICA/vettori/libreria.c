@@ -99,7 +99,3 @@ void riempiVettoreOrdinatoCasuale(int vett[], int dim, int minimo, int massimo) 
         vett[pos] = num;
     }
 }
-
-
-
-

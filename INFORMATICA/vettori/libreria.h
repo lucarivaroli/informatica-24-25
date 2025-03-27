@@ -67,5 +67,25 @@ int ricercaBinaria(int array[], int dim, int estInf, int estSup, int valore);
 
 /**
  * Funzione che riempie un vettore di dimensione dim con numeri casuali in ordine crescente
+ * @param int[] vett vettore da riempire
+ * @param int dim dimensione del vettore
+ * @param int minimo valore minimo
+ * @param int massimo valore massimo
  */
 void riempiVettoreOrdinatoCasuale(int vett[], int dim, int minimo, int massimo);
+
+int trovaPosizione (int vett[], int dim, int num);
+/**
+ * Funzione che restituisce la posizione in cui inserire un numero in un vettore ordinato in ordine crescente
+ * @param int[] vett vettore in cui cercare la posizione
+ * @param int dim dimensione del vettore
+ * @param int num numero da inserire
+ */
+
+ void shiftDx (int vett[], int dim, int pos);
+/**
+ * Funzione che sposta tutti gli elementi di un vettore a destra a partire dalla posizione pos
+ * @param int[] vett vettore da spostare
+ * @param int dim dimensione del vettore
+ * @param int pos posizione da cui iniziare lo spostamento
+ */
