@@ -43,3 +43,29 @@ int contaValore(int vettore[], int dim, int valore);
  * @param int valore valore da cercare
  * @return int numero di volte in cui il valore compare nel vettore
  */
+
+/**
+ * questa funzione restituisce la posizione del primo elemento nell'array che ha valore uguale alla variabile valore, se non trova l'elemento restituisce -1
+ * @param int* vettore in ingresso
+ * @param int dimensione del vettore
+ * @param int valore da ricercare
+ * @return int posizione del primo elemento uguale a valore o -1 se non trovato
+ */
+int ricercaSequenziale(int *vettore, int dim, int valore);
+
+
+/**
+ * questa funzione restituisce la posizione del primo elemento in un array ORDINATO in ordine crescente che ha valore uguale alla variabile valore, se non trova l'elemento restituisce -1
+ * @param int[]vettore in ingresso
+ * @param int dimensione del vettore
+ * @param int indice dell'elemento da cui parte la ricerca
+ * @param int indice dell'elemento a cui arriva la ricerca
+ * @param int valore da ricercare
+ * @return int posizione del primo elemento uguale a valore o -1 se non trovato
+ */
+int ricercaBinaria(int array[], int dim, int estInf, int estSup, int valore);
+
+/**
+ * Funzione che riempie un vettore di dimensione dim con numeri casuali in ordine crescente
+ */
+void riempiVettoreOrdinatoCasuale(int vett[], int dim, int minimo, int massimo);
