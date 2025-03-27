@@ -89,3 +89,12 @@ int trovaPosizione (int vett[], int dim, int num);
  * @param int dim dimensione del vettore
  * @param int pos posizione da cui iniziare lo spostamento
  */
+
+ void scambiavettori(int vett[], int dim, int vett2[], int dim2);
+/**
+ * Funzione che scambia i valori di due vettori
+ * @param int[] vett vettore da scambiare
+ * @param int dim dimensione del vettore
+ * @param int[] vett2 vettore da scambiare
+ * @param int dim2 dimensione del vettore
+ */
