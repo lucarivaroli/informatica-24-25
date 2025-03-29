@@ -10,9 +10,10 @@ void riempiVettore(int vettore[], int dim){
     }
 }
 
+
 void stampaVettore(int vettore[], int dim, char sep){
     for(int i=0; i<dim; i++){
-        printf("%d%c", vettore[i], sep);
+        printf("%d %c", vettore[i], sep);
     }
 }
 
