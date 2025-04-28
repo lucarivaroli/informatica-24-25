@@ -56,12 +56,13 @@ void loop() {
     long distanza = misuraDistanza();               // Ottiene la distanza misurata dal sensore
     int luminosita = analogRead(LUMINOSITA_PIN);    // legge la luminosita e la converte in un valore tra 0 a 1023
 
-    //stampa i valori sul monitor
+    //stampa i valori sul monitor seriale
     Serial.print("Distanza: ");
     Serial.print(distanza);
     Serial.print(" cm, Luminosità: ");
     Serial.println(luminosita);
 
+    //stampa i valori sul display
     lcd.clear();                    //pulisce il display
     lcd.setCursor(0, 0);
     lcd.print("Distanza: ");
