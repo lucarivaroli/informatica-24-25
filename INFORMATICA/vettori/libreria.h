@@ -107,3 +107,10 @@ int trovaPosizione (int vett[], int dim, int num);
  * @param int[] vett2 vettore da scambiare
  * @param int dim2 dimensione del vettore
  */
+
+void caricaBubble(int vett[], int dim);
+/**
+ * Funzione che ordina un vettore di interi in ordine crescente utilizzando l'algoritmo Bubble Sort
+ * @param int[] vett vettore da ordinare
+ * @param int dim dimensione del vettore
+ */

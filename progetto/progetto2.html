@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Distributore d'acqua Arduino</title>
+    <style>
+        /* stile per il corpo della pagina */
+        body { 
+            font-family: verdana, sans-serif;
+            background-color: #b3d6f0;   /* sfondo */
+            margin: 0;
+            padding: 0;
+            color: #000000;       /* colore scritte */
+        }
+        /* stile per il titolo */
+        header {
+            background-color: #0078d7;  /* colore sfondo intestazione */
+            text-align: center;
+            padding: 1.5rem;  /* grandezza spazio della intestazione */
+        }
+        /* stile per il titolo */
+        h1 {
+            color: white;
+            font-size: 1.8rem;   /*  dimensione del tiolo */
+        }
+        /*  stile per le sezioni della pagina */
+        section {
+            margin: 25px;  /* spaziatura per separare le sezioni */
+            padding: 20px;   /* spaziatura interna per contenere il testo */
+            background-color: #ffffff;   /* sfondo di ogni sezione */
+            box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.1);  /*ombre per ogni sezione*/
+            border-radius: 10px;  /* angoli arrotondati */
+        }
+        /*stile per il footer*/
+        footer {
+            text-align: center;  
+            padding: 25px;  /*spaziatura */
+            background-color: #0246a0;  
+            color: white;
+            font-size: 1rem; 
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h1>💧 Distributore d'Acqua Automatico con Arduino 💧</h1>
+    </header>
+    
+
+    <section>
+        <h2>Panoramica</h2>
+        <p>
+            Il <b>distributore d'acqua automatico</b> realizzato con Arduino è un sistema innovativo per gestire automaticamente il flusso d'acqua. È adatto per applicazioni domestiche e può essere adattato per molteplici utilizzi.
+        </p>
+    </section>
+
+    
+    <section>
+        <h2>Schema del Progetto</h2>
+        <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+            <img src="IMG_4229.jpg" alt="Schema 1" style="max-width: 45%; height: auto; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+            <img src="IMG_4229.jpg" alt="Schema 2" style="max-width: 45%; height: auto; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+        </div>
+    </section>
+    
+    
+    <section>
+        <h2>Come Funziona</h2>
+        <p>
+            Il distributore utilizza un sensore di movimento per rilevare il bicchiere. Quando viene rilevato il bicchiere, Arduino attiva la pompa dell'acqua per fornireil flusso d'acqua che arriva direttamente nel bicchiere. Il display LCD mostra informazioni utili come: se la pompa e accesa o spenta, la distanza che calcola il sensore a ultrasuoni e un commento in base se ce o no il bicchiere.Tutto questo è controllato da un codice programmato su Arduino per gestire i componenti in modo coordinato.
+        </p>
+    </section>
+    
+    
+    <section>
+        <h2>Componenti Principali e link amazon</h2>
+        <ul>
+            <li>🖥️ Arduino UNO <a href="https://www.amazon.it/dp/B01MRJR8UF" target="_blank">link Amazon</a></li>
+            <li>💦 Pompa d'acqua 12V <a href="https://www.amazon.it/dp/B082PM8L6X" target="_blank">link Amazon</a></li>
+            <li>🔌 Relè <a href="https://www.amazon.it/dp/B09Q5XNFVK/ref=twister_B0CW33JNVG?_encoding=UTF8&th=1" target="_blank">link Amazon</a></li>
+            <li>📟 Display LCD <a href="https://www.amazon.it/dp/B0B76VGXYH" target="_blank">link Amazon</a></li>
+            <li>🔩 Resistenze <a href="https://www.amazon.it/Elegoo-Resistor-Assortimento-Progetti-Elettronica/dp/B071Z66XDV" target="_blank">link Amazon</a></li>
+            <li>🚰 Tubi <a href="https://www.amazon.it/Uxney-Tubo-silicone-trasparente-domestico/dp/B0CMX4KYC4" target="_blank">link amazon</a> e contenitore </li>
+            <li>🔀 Breadboard <a href="https://www.amazon.it/ELEGOO-Breadboard-compatibile-Arduino-Jumper/dp/B0CY4LGG6W" target="_blank">link Amazon</a></li>
+            <li>📡 Sensore a ultrasuoni <a href="https://www.amazon.it/AZDelivery-Ultrasuoni-HC-SR04-Telemetro-Raspberry/dp/B078S7G8LB" target="_blank">link Amazon</a></li>
+            <li>🔗 Cavi di collegamento <a href="https://www.amazon.it/Elegoo-Cavetti-Maschio-Femmina-Raspberry/dp/B01N40EK6M" target="_blank">link Amazon</a></li>
+            <li>💡 Led <a href="https://www.amazon.it/AUKENIEN-Rotonda-Luminosit%C3%A0-Diffusione-Luminosa/dp/B0972DL7JW" target="_blank">link Amazon</a></li>
+            <li> 🔆 Fotoresistore <a href="https://www.amazon.it/DollaTek-Sensore-resistore-dipendente-Fotoresistor/dp/B07F9NNCZ5" target="_blank">link Amazon</a></li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Progetto finito</h2>
+        <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+            <img src="IMG_4229.jpg" alt="Schema 1" style="max-width: 45%; height: auto; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+            <img src="IMG_4229.jpg" alt="Schema 2" style="max-width: 45%; height: auto; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+        </div>
+    </section>
+
+
+    
+    <footer>
+        <p>&copy; Collaboratori Rivaroli Luca, Nair Anas | distributore d'acqua automatico</p>
+    </footer>
+
+</body>
+</html>
+
