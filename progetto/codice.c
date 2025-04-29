@@ -4,8 +4,8 @@
 #define TRIG 7              //pin di uscita sensore ultrasuoni
 #define ECHO 6              //pin di entrata sensore ultrasuoni
 #define RELAY 8
-#define LED_LUCE 5         // led (rosso) che si accende con poca luce.
-#define LED_LAMPEGGIO 4    // led (verde) che lampeggia nel ciclo for.
+#define LED_LUCE 5         // led (rosso) che si accende con poca luce
+#define LED_LAMPEGGIO 4    // led (verde) che lampeggia nel ciclo for
 #define LUMINOSITA_PIN A0   //pin del fotoresitore (luminosita)
 
 LiquidCrystal_I2C lcd(0x27, 20, 4);

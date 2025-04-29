@@ -1,11 +1,11 @@
-#include <Wire.h>                   //comunicazione con display LCD I2C
-#include <LiquidCrystal_I2C.h>      //display LCD I2C
+#include <Wire.h>                   
+#include <LiquidCrystal_I2C.h>      
     
-    #define TRIG 7              //pin di uscita
+    #define TRIG 7              
     #define ECHO 6
     #define RELAY 8
-    #define LED_LUCE 5         // led (rosso) che si accende con poca luce.
-    #define LED_LAMPEGGIO 4    // led (verde) che lampeggia nel ciclo for.
+    #define LED_LUCE 5         
+    #define LED_LAMPEGGIO 4    
     #define LUMINOSITA_PIN A0
     
     LiquidCrystal_I2C lcd(0x27, 20, 4);
@@ -21,19 +21,18 @@
         }
     }
     
-    // eseguita una sola volta 
+     
     void setup() {
         pinMode(TRIG, OUTPUT);
         pinMode(ECHO, INPUT);
         pinMode(RELAY, OUTPUT);
         pinMode(LED_LUCE, OUTPUT);
         pinMode(LED_LAMPEGGIO, OUTPUT);
-        digitalWrite(RELAY, HIGH);          //il relay parte da high
+        digitalWrite(RELAY, HIGH);       
     
-        Serial.begin(9600);         //inizia la comunicazione
-    
-        lcd.init();                 //inizializza il display
-        lcd.backlight();            //accende la retroilluminazione
+        Serial.begin(9600);         
+        lcd.init();                 
+        lcd.backlight();            
         lcd.setCursor(0, 0);
         lcd.print("Distributore ON");
         delay(1000);
@@ -42,16 +41,16 @@
     long misuraDistanza() {
         digitalWrite(TRIG, LOW);
         delayMicroseconds(2);           
-        digitalWrite(TRIG, HIGH);                   //inizio misurazione
+        digitalWrite(TRIG, HIGH);                   
         delayMicroseconds(10);
-        digitalWrite(TRIG, LOW);                    //chiude l'impulso
+        digitalWrite(TRIG, LOW);                    
     
-        long durata = pulseIn(ECHO, HIGH);          //Misura il tempo che l’impulso impiega a tornare al sensore.
+        long durata = pulseIn(ECHO, HIGH);          
         long distanza = durata * 0.034 / 2;
         return distanza;
     }
     
-    //eseguita continuamente
+   
     void loop() {
         long distanza = misuraDistanza();
         int luminosita = analogRead(LUMINOSITA_PIN);
@@ -62,8 +61,7 @@
         Serial.print(" cm, Luminosità: ");
         Serial.println(luminosita);
     
-        lcd.clear();                    //pulisce il display
-        lcd.setCursor(0, 0);
+        lcd.clear();                    
         lcd.print("Distanza: ");
         lcd.print(distanza);
         lcd.print("cm");
@@ -73,7 +71,7 @@
             
             lampeggiaLED(LED_LAMPEGGIO, 3, 200);
     
-            digitalWrite(RELAY, LOW);               //accende il relay
+            digitalWrite(RELAY, LOW);               
             lcd.print("Pompa: ACCESA");
             lcd.setCursor(0, 2);
             lcd.print("Grazie, arrivederci! ");
