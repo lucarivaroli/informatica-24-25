@@ -13,36 +13,10 @@
             color: #000000;
         }
 
-        /* Navbar fissa */
-        nav {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background-color: #0246a0;
-            padding: 12px;
-            text-align: center;
-            z-index: 1000;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 20px;
-            font-weight: bold;
-            font-size: 1rem;
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color: #ffd700;
-        }
-
         header {
             background-color: #0078d7;
             text-align: center;
             padding: 1.5rem;
-            margin-top: 70px; /* spazio per non far coprire il titolo dalla navbar */
         }
 
         h1 {
@@ -68,23 +42,24 @@
 
         /* effetto hover immagini */
         img {
-            transition: transform 0.3s, box-shadow 0.3s;
+            transition: transform 0.3s, box-shadow 0.3s;/*cambiamenti di stile e ombra*/
         }
 
         img:hover {
-            transform: scale(1.03);
+            transform: scale(1.03);/*ingrandisce immagine del 3%*/
+           
         }
 
         /* stile bottoni Amazon */
         a.button-link {
-            display: inline-block;
-            padding: 8px 14px;
-            margin: 5px 0;
+            display: inline-block;/*il link diventa un bottone*/
+            padding: 8px 14px;/*spaziatura esterna*/
+            margin: 5px 0;/*margine*/
             background-color: #71a7d4;
             color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s;
+            text-decoration: none;/*rimuove la sottolineaura dei link*/
+            border-radius: 5px;/*arrotonda gli angoli*/
+            transition: background-color 0.3s;/*cambio di colore quando si passa su con il mouse*/
         }
 
         a.button-link:hover {
@@ -95,26 +70,18 @@
 </head>
 <body>
 
-<!-- NAVBAR -->
-<nav>
-    <a href="#panoramica">Panoramica</a>
-    <a href="#esecuzione">Esecuzione</a>
-    <a href="#funzionamento">Funzionamento</a>
-    <a href="#componenti">Componenti</a>
-</nav>
-
 <header>
-    <h1>💧 Dispenser d'Acqua Automatico con Arduino 💧</h1>
+    <h1>💧 Distributore d'Acqua Automatico con Arduino 💧</h1>
 </header>
 
-<section id="panoramica">
+<section>
     <h2>Panoramica</h2>
     <p>
-        Il <b>dispenser d'acqua automatico</b> realizzato con Arduino è un sistema innovativo per gestire automaticamente il flusso d'acqua. È adatto per applicazioni domestiche e può essere adattato per molteplici utilizzi.
+        Il <b>distributore d'acqua automatico</b> realizzato con Arduino è un sistema innovativo per gestire automaticamente il flusso d'acqua. È adatto per applicazioni domestiche e può essere adattato per molteplici utilizzi.
     </p>
 </section>
 
-<section id="esecuzione">
+<section>
     <h2>Progetto in fase di esecuzione</h2>
     <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
         <img src="IMG_4229.jpg" alt="Schema 1" style="max-width: 60%; height: auto; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
@@ -122,14 +89,14 @@
     </div>
 </section>
 
-<section id="funzionamento">
+<section>
     <h2>Come Funziona</h2>
     <p>
-        Il <b>dispenser automatico</b> utilizza un sensore di movimento per rilevare il bicchiere. Quando viene rilevato il bicchiere, Arduino attiva la pompa dell'acqua per fornire il flusso d'acqua che arriva direttamente nel bicchiere. Il display LCD mostra informazioni utili come: se la pompa è accesa o spenta, la distanza che calcola il sensore a ultrasuoni e un commento in base se c'è o no il bicchiere. Tutto questo è controllato da un codice programmato su Arduino per gestire i componenti in modo coordinato.
+        Il distributore utilizza un sensore di movimento per rilevare il bicchiere. Quando viene rilevato il bicchiere, Arduino attiva la pompa dell'acqua per fornire il flusso d'acqua che arriva direttamente nel bicchiere. Il display LCD mostra informazioni utili come: se la pompa è accesa o spenta, la distanza che calcola il sensore a ultrasuoni e un commento in base se c'è o no il bicchiere. Tutto questo è controllato da un codice programmato su Arduino per gestire i componenti in modo coordinato.
     </p>
 </section>
 
-<section id="componenti">
+<section>
     <h2>Componenti Principali e link Amazon</h2>
     <ul>
         <li>🖥️ Arduino UNO <a class="button-link" href="https://www.amazon.it/dp/B01MRJR8UF" target="_blank">Acquista su Amazon</a></li>
@@ -147,7 +114,7 @@
 </section>
 
 <footer>
-    <p>&copy; Collaboratori Rivaroli Luca, Nair Anas | dispenser d'acqua automatico</p>
+    <p>&copy; Collaboratori Rivaroli Luca, Nair Anas | distributore d'acqua automatico</p>
 </footer>
 
 </body>
