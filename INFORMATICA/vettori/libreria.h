@@ -114,3 +114,12 @@ void caricaBubble(int vett[], int dim);
  * @param int[] vett vettore da ordinare
  * @param int dim dimensione del vettore
  */
+
+
+
+void scambiomaxmin(int vett[], int dim);
+/**
+ * Funzione che scambia il valore massimo e il valore minimo di un vettore
+ * @param int[] vett vettore da modificare
+ * @param int dim dimensione del vettore
+ */

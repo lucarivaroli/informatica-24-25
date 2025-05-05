@@ -19,6 +19,7 @@ int main(){
         printf("\n1)creare un array ");
         printf("\n2)stapare un array ");
         printf("\n3)ordinare array con bubble sort ");
+        printf("\n4) ");
         printf("\ndigita 0 per terminare ");
         scanf("%d", &scelta);
 
@@ -36,7 +37,16 @@ int main(){
                 break;
             }
         
+
+            case 3:{
+                bubbleSort(vett, DIM);
+                printf("vettore ordinato: ");
+                stampaVettore( vett, DIM, '-');
+                break;
+            }
         }
+
+        
             
             
     } while (scelta!=0);

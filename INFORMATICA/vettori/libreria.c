@@ -120,3 +120,29 @@ void caricaBubble(int vett[], int dim){
         }
     }
 }
+
+
+
+void scambiominmax(int vett[], int DIM){
+    int min, max, temp, i_min, i_max;
+    min=vett[0];
+    max=vett[0];
+
+    for(int i=1; i<DIM; i++){
+        if(vett[i]<min){
+            min=vett[i];
+            i_min=i;
+        }
+
+        if (vett[i]>max)
+        {
+            max=vett[i];
+            i_max=i;
+        }
+        
+    }
+
+    vett[i_min]=max;
+    vett[i_max]=min;
+
+}

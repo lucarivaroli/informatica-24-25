@@ -6,8 +6,8 @@
 #define TRIG 7                      // Pin di uscita sensore ultrasuoni
 #define ECHO 6                      // Pin di entrata sensore ultrasuoni
 #define RELAY 8                     // Pin collegato al relay per la pompa
-#define LED_LUCE 5                  // LED rosso che si accende con poca luce
-#define LED_LAMPEGGIO 4             // LED verde che lampeggia
+#define LED_LUCE 5                  // LED verde che si accende con poca luce
+#define LED_LAMPEGGIO 4             // LED rosso che lampeggia
 #define LUMINOSITA_PIN A0           // Pin del fotoresistore (luminosità)
 
 LiquidCrystal_I2C lcd(0x27, 20, 4); // Inizializzazione display 
@@ -57,7 +57,7 @@ void setup() {
 // Ciclo principale, eseguito continuamente
 void loop() {
     long distanza = misuraDistanza();               // ottiene la distanza misurata dal senssoe
-    int luminosita = analogRead(LUMINOSITA_PIN);   
+    int luminosita = analogRead(LUMINOSITA_PIN);    // legge la luminosita e la converte in un valore tra 0 a 1023
 
     
     Serial.print("Distanza: ");
