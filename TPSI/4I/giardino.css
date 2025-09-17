@@ -1,0 +1,98 @@
+/* Reset di base */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+
+    /* immagine della margherita come sfondo */
+    background-image: url("margherita.jpg");
+    background-size: cover;      /* la adatta a coprire tutto */
+    background-position: center; /* la centra */
+    background-attachment: fixed;/* resta ferma anche se scrolli */
+}
+
+
+/* Titoli */
+#titolo {
+    background-color: #2f6f3e; /* verde */
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+#titolo2 {
+    background-color: #2f6f3e;
+    color: #cde6d0;
+    font-size: 18px;
+    padding: 5px 20px 15px 20px;
+    font-style: italic;
+}
+
+/* Navbar laterale */
+#navbar {
+    background: #fff;
+    width: 180px;
+    float: left;
+    border-right: 3px solid #ddd;
+    height: 100%;
+    padding: 20px 10px;
+    box-sizing: border-box;
+}
+
+#navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#navbar li {
+    margin: 12px 0;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: #2f6f3e;
+    font-weight: bold;
+}
+
+#navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Contenuto principale */
+#contenuto {
+    margin-left: 200px; /* spazio per la navbar */
+    padding: 20px;
+}
+
+#contenuto h2 {
+    background: #fff8e1; /* giallino chiaro */
+    border-left: 8px solid #f0c000;
+    padding: 8px;
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+#contenuto p {
+    margin: 10px 0 20px 0;
+    line-height: 1.4em;
+}
+
+
+
+
+/* Footer */
+footer {
+    clear: both;
+    background: #2f6f3e;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+footer a {
+    color: white;
+    text-decoration: underline;
+}
