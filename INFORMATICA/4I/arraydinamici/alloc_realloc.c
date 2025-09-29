@@ -38,7 +38,7 @@ void stampavett(int *_vettore, int _n){
     printf("\n");
 }
 
-int _sommamultipli(int *_vettore, int _n){
+int sommamultipli(int *_vettore, int _n){
     int somma=0;
     for(int i=0; i<_n; i++){
         if(_vettore[i]%3==0){
@@ -48,12 +48,32 @@ int _sommamultipli(int *_vettore, int _n){
     return somma;
 }
 
-
-
-
-
-
-
+void creavettdispari(int *_vettore, int _n){
+    int count=0;
+    for(int i=0; i<_n; i++){
+        if(_vettore[i]%2!=0){
+            count++;
+        }
+    }
+    int *vettoredispari=(int*)malloc(count*sizeof(int));
+    if(vettoredispari==NULL){
+        printf("Errore!\n");
+        return 1;
+    }
+    int j=0;
+    for(int i=0; i<_n; i++){
+        if(_vettore[i]%2!=0){
+            vettoredispari[j]=_vettore[i];
+            j++;
+        }
+    }
+    printf("il nuovo vettore con solo numeri dispari e': ");
+    for(int i=0; i<count; i++){
+        printf("%d\t", vettoredispari[i]);
+    }
+    printf("\n");
+    free(vettoredispari);
+}
 
 
 
@@ -66,6 +86,13 @@ int main(){
     vettore= creavett(n);
     vettore= inseriscivalori(vettore, n);
     stampavett(vettore, n);
+    int somma=sommamultipli(vettore, n);
+    creavettdispari(vettore, n);
+
+
+    printf("la somma dei multipli di 3 e': %d\n", somma);
+    return 0;
+
     
 
 }
