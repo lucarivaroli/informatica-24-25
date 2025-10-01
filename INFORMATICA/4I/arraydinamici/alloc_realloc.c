@@ -1,98 +1,87 @@
-/* SCRIVERE UN PROGRAMMA IN LINGUAGGIO IN C CHE:
-    1) ALLOCHI DINAMICAMENTE UN ARRAY INIZIALE DI N NUMERI
-    2) INSERIMENTO DEI VALORI
-    3) STAMPA ARRAY 
-    4) CALCOLI LA SOMMA DEGLI ELEMENTI MULTIPLI DI 3
-    5) CREIAMO UN NUOVO ARRAY CON SOLO VALORI DISPARI
- */
+#include <stdio.h>
+#include <stdlib.h>
 
-#include<stdio.h>
-#include<stdlib.h>
-
-int* _creavett(int _n){
-
-    int *_vettore=(int*)malloc(_n *sizeof(int));
-        if(_vettore==NULL){
-
-            printf("Errore!\n");
-            return 1;
-        }
-    return _vettore;
-}
-
-int *_inseriscivalori(int _n){
-    for(int i=0; i<n; i++){
-        printf("inserisci l'elemento: ");
-        scanf("%d", &_vettore[i]);
-
+int* creavett(int n) {
+    int* vettore = (int*)malloc(n * sizeof(int));
+    if (vettore == NULL) {
+        printf("Errore nell'allocazione della memoria!\n");
+        exit(1); // termina il programma
     }
-    return _vettore;
+    return vettore;
 }
 
-void stampavett(int *_vettore, int _n){
-    printf("hai inserito i seguenti elementi: ");
-    for (int i = 0; i < _n; i++)
-    {
-        printf("%d\t", _vettore[i]);
+void inseriscivalori(int* vettore, int n) {
+    for (int i = 0; i < n; i++) {
+        printf("Inserisci l'elemento %d: ", i + 1);
+        scanf("%d", &vettore[i]);
+    }
+}
+
+void stampavett(int* vettore, int n) {
+    printf("Hai inserito i seguenti elementi:\n");
+    for (int i = 0; i < n; i++) {
+        printf("%d\t", vettore[i]);
     }
     printf("\n");
 }
 
-int sommamultipli(int *_vettore, int _n){
-    int somma=0;
-    for(int i=0; i<_n; i++){
-        if(_vettore[i]%3==0){
-            somma+=_vettore[i];
+int sommamultipli(int* vettore, int n) {
+    int somma = 0;
+    for (int i = 0; i < n; i++) {
+        if (vettore[i] % 3 == 0) {
+            somma += vettore[i];
         }
     }
     return somma;
 }
 
-void creavettdispari(int *_vettore, int _n){
-    int count=0;
-    for(int i=0; i<_n; i++){
-        if(_vettore[i]%2!=0){
+void creavettdispari(int* vettore, int n) {
+    int count = 0;
+    for (int i = 0; i < n; i++) {
+        if (vettore[i] % 2 != 0) {
             count++;
         }
     }
-    int *vettoredispari=(int*)malloc(count*sizeof(int));
-    if(vettoredispari==NULL){
-        printf("Errore!\n");
-        return 1;
+
+    int* vettoredispari = (int*)malloc(count * sizeof(int));
+    if (vettoredispari == NULL) {
+        printf("Errore nell'allocazione del vettore dispari!\n");
+        return;
     }
-    int j=0;
-    for(int i=0; i<_n; i++){
-        if(_vettore[i]%2!=0){
-            vettoredispari[j]=_vettore[i];
-            j++;
+
+    int j = 0;
+    for (int i = 0; i < n; i++) {
+        if (vettore[i] % 2 != 0) {
+            vettoredispari[j++] = vettore[i];
         }
     }
-    printf("il nuovo vettore con solo numeri dispari e': ");
-    for(int i=0; i<count; i++){
+
+    printf("Il nuovo vettore con solo numeri dispari è:\n");
+    for (int i = 0; i < count; i++) {
         printf("%d\t", vettoredispari[i]);
     }
     printf("\n");
+
     free(vettoredispari);
 }
 
-
-
-int main(){
-
-    int *vettore=NULL;
+int main() {
+    int* vettore = NULL;
     int n;
 
+    printf("Quanti elementi vuoi inserire? ");
+    scanf("%d", &n);
 
-    vettore= creavett(n);
-    vettore= inseriscivalori(vettore, n);
+    vettore = creavett(n);
+    inseriscivalori(vettore, n);
     stampavett(vettore, n);
-    int somma=sommamultipli(vettore, n);
+
+    int somma = sommamultipli(vettore, n);
+    printf("La somma dei multipli di 3 è: %d\n", somma);
+
     creavettdispari(vettore, n);
+    //dispari= estraidispari(vettore, n, &dimDispari); --> per usare la realloc
 
-
-    printf("la somma dei multipli di 3 e': %d\n", somma);
+    free(vettore);
     return 0;
-
-    
-
 }

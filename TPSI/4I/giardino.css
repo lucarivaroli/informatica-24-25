@@ -6,8 +6,8 @@ body {
 
     /* immagine della margherita come sfondo */
     background-image: url("margherita.jpg");
-    background-size: cover;      /* la adatta a coprire tutto */
-    background-position: center; /* la centra */
+    background-size: 175%;      /* la adatta a coprire tutto */
+    background-position: right; /* la centra */
     background-attachment: fixed;/* resta ferma anche se scrolli */
 }
 
@@ -31,7 +31,7 @@ body {
 
 /* Navbar laterale */
 #navbar {
-    background: #fff;
+    background-color: #b0cab6;
     width: 180px;
     float: left;
     border-right: 3px solid #ddd;
@@ -62,13 +62,14 @@ body {
 
 /* Contenuto principale */
 #contenuto {
+    background-color: #b0cab6;
     margin-left: 200px; /* spazio per la navbar */
     padding: 20px;
 }
 
 #contenuto h2 {
     background: #fff8e1; /* giallino chiaro */
-    border-left: 8px solid #f0c000;
+   
     padding: 8px;
     margin-top: 25px;
     font-size: 20px;
