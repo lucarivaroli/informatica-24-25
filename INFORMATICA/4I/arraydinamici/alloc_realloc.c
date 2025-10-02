@@ -45,8 +45,8 @@ void creavettdispari(int* vettore, int n) {
 
     int* vettoredispari = (int*)malloc(count * sizeof(int));
     if (vettoredispari == NULL) {
-        printf("Errore nell'allocazione del vettore dispari!\n");
-        return;
+        printf("problema!\n");
+        return 1;
     }
 
     int j = 0;
@@ -56,7 +56,7 @@ void creavettdispari(int* vettore, int n) {
         }
     }
 
-    printf("Il nuovo vettore con solo numeri dispari è:\n");
+    printf("c'è solo un numero dispari:\n");
     for (int i = 0; i < count; i++) {
         printf("%d\t", vettoredispari[i]);
     }
