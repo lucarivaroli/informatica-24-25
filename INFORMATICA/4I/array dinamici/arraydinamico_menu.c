@@ -73,5 +73,6 @@ int main(){
     } while (scelta !=6);
     
 }
+}
 
 

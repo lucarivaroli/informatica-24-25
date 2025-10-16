@@ -4,9 +4,11 @@
         <title>JAVASCRIPT</title>
         <script>
             function mostraOra(){
-                var d= new Date();
+                let d= new Date(); //per dichiarare la variabile si puo usare sia let che var
                 var ora=d.toLocaleTimeString();
-                alert(ora);
+                //alert(ora);
+                document.body.innerHTML += "<p>l'ora attuale e: </p>";
+                document.body.innerHTML += ora;
             }
 
         </script>
