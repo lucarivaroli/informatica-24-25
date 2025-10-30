@@ -23,7 +23,7 @@
         </style>
         <script>
 
-        
+            
             var dimCarattere=15;
             function scrivi(){
                 document.getElementById("output").innerHTML= messaggio.value;
@@ -44,6 +44,22 @@
                 dimCarattere--;
                 document.getElementById("output").style.fontSize=dimCarattere+"px";
             }
+            // funzione che allarhi la div output di 20px ogni volta che viene schiacciato il pulsante
+            function allargaDiv(){
+                var larghezza=document.getElementById("output").offsetWidth;
+                larghezza+=20;
+                document.getElementById("output").style.width=larghezza+"px";
+            }
+
+            //funzione che diminuisce
+            function rimpicciolisciDiv(){
+                larghezza=document.getElementById("output").offsetWidth;
+                larghezza-=20;
+                document.getElementById("output").style.width=larghezza+"px";
+            }
+
+
+
 
 
         </script>
@@ -63,8 +79,11 @@
             <input type ="button" value="aumenta carattere" onclick="allargaCarattere();"></input>
             <input type ="button" value="diminuisci carattere" onclick="rimpicciolisciCarattere();"></input>
             <br></br>
-            
-            <div id="output"></div>
+            <input type ="button" value="allarga div" onclick="allargaDiv();"></input>
+            <input type ="button" value="rimpicciolisci div" onclick="rimpicciolisciDiv();"></input>
+            <br></br>
+
+             <div id="output"></div>
 
             
 
