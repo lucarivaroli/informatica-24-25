@@ -23,15 +23,26 @@
         </style>
         <script>
 
+        
+            var dimCarattere=15;
             function scrivi(){
                 document.getElementById("output").innerHTML= messaggio.value;
             }
 
             function cambiacolore(){
-                var msg=document.getElementById("messaggio").value;
+                //var msg=document.getElementById("messaggio").value;
                 var color=document.getElementById("colore").value;
-                document.getElementById("output").innerHTML=msg;
+                //document.getElementById("output").innerHTML=msg;
                 document.getElementById("output").style.color=color;
+            }
+            function allargaCarattere(){
+                dimCarattere++;
+                document.getElementById("output").style.fontSize=dimCarattere+"px";
+            }
+
+            function rimpicciolisciCarattere(){
+                dimCarattere--;
+                document.getElementById("output").style.fontSize=dimCarattere+"px";
             }
 
 
@@ -49,6 +60,10 @@
             <input type ="button" value="ricopia il testo" onclick="scrivi();"></input>
     
             <input type ="button" value="cambia colore testo" onclick="cambiacolore();"></input>
+            <input type ="button" value="aumenta carattere" onclick="allargaCarattere();"></input>
+            <input type ="button" value="diminuisci carattere" onclick="rimpicciolisciCarattere();"></input>
+            <br></br>
+            
             <div id="output"></div>
 
             
