@@ -17,15 +17,10 @@ void cambio(char *str, int fattore) {
 
 }
 
-
-
-
 int main(){
     int decifratura=0;
     char stringa[200];
     int len=0;
-
-
 
     printf("inserisci il fattore di decifratura: ");
     scanf("%d", &decifratura);
@@ -34,15 +29,10 @@ int main(){
     getchar(); 
     fgets(stringa, sizeof(stringa), stdin);
    
-
-
+    
     cambio(stringa, decifratura);
     printf("stringa decifrata: %s", stringa);
     return 0;
-
-
-
-
 
 }
 
