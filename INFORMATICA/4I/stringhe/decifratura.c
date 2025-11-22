@@ -22,17 +22,13 @@ int main(){
 
     printf("inserisci una stringa: ");
     getchar(); 
-    fgets(stringa, sizeof(stringa), stdin);
+    fgets(stringa, 200, stdin);
    
 
 
     cambio(stringa, decifratura);
     printf("stringa decifrata: %s", stringa);
     return 0;
-
-
-
-
 
 }
 
