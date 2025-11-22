@@ -1,0 +1,51 @@
+<!--indovinare il numero
+creare un input type perl'inserimento del valore
+pulsante che al click mi controlli che ho indovinato
+fuction indovina(){
+    const num 45
+    const num2=  document.getElementById("nome del campo input type");
+    } -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>indovina numeri</title>
+    <script>
+      function indovina(){
+       const num1=45;
+       const num2=document.getElementById("num1");
+        const num=parseInt(num2.value);
+
+
+
+
+       
+       if(Math.abs(num-num2)<30){
+        document.body.style.backgroundColor="red";
+        }
+        else if(Math.abs(num-num2)<20){
+            document.body.style.backgroundColor="yellow";
+        }
+        else if(Math.abs(num-num2)<10){
+            document.body.style.backgroundColor="blue";
+        }
+        else{
+            document.body.style.backgroundColor="green";
+        }
+        
+        
+      
+    }
+    </script>
+  </head>
+  <body>
+    <h2>indovina numero</h2>
+
+    <input id="num1" type="number" placeholder="Primo numero">
+    <input type="button" value="Calcola somma" onclick="indovina();">
+
+
+    
+
+  </body>
+</html>
