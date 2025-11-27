@@ -11,41 +11,33 @@ fuction indovina(){
   <head>
     <title>indovina numeri</title>
     <script>
+      var ind=12;
+      function resetta(){
+        document.getElementById("num1").value="";
+        document.bgColor="white";
+      }
       function indovina(){
-       const num1=45;
-       const num2=document.getElementById("num1");
-        const num=parseInt(num2.value);
-
-
-
-
-       
-       if(Math.abs(num-num2)<30){
-        document.body.style.backgroundColor="red";
+        if(Math.abs(parseFloat(document.getElementById("num1").value)-ind)>30){
+            document.bgColor="red";
         }
-        else if(Math.abs(num-num2)<20){
-            document.body.style.backgroundColor="yellow";
+        if(Math.abs(parseFloat(document.getElementById("num1").value)-ind)<20){
+            document.bgColor="blue";
         }
-        else if(Math.abs(num-num2)<10){
-            document.body.style.backgroundColor="blue";
+        if(Math.abs(parseFloat(document.getElementById("num1").value)-ind)<5){
+            document.bgColor="yellow";
         }
-        else{
-            document.body.style.backgroundColor="green";
-        }
-        
-        
       
-    }
+      }
     </script>
+
+
   </head>
   <body>
     <h2>indovina numero</h2>
-
-    <input id="num1" type="number" placeholder="Primo numero">
-    <input type="button" value="Calcola somma" onclick="indovina();">
-
-
     
+    <input type="text" id="num1" >&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="button" value="Controlla numero" onclick="indovina();">&nbsp;&nbsp;
+    <input type="button" value="Reset" onclick="resetta();">
 
   </body>
 </html>
