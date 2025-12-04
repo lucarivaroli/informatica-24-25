@@ -1,0 +1,44 @@
+<!--creare una calcolatrice -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>calcolatrice</title>
+        <script>
+            let str="", str1="", op="";
+            function tasto(v){
+                str=str+v;
+                document.calc.display.value+=v;
+                str+=v
+            }
+
+        </script>
+    </head>
+    <body>
+        <table border="3">
+            <td></td>
+                <form name="calc">
+                    <br></br>CASIO
+                    <input type="text" name="display" value="" size="26"><br></br>
+                    <table border="2">
+                        <tr>
+                            <input type="button" value="1" onclick="tasto(this.value)">
+                            <input type="button" value="2" onclick="tasto(this.value)">
+                            <input type="button" value="*" onclick="">
+                        </tr>
+                         <tr>
+                            <input type="button" value="-" onclick="">
+                        </tr>
+                         <tr>
+                            <input type="button" value="=" onclick="">
+                        </tr>
+                         <tr>
+                            <input type="button" value="0" onclick="tasto(this.value)">
+                            <input type="button" value="." onclick="tasto(this.value)">
+                        </tr>
+
+                    </table>
+                </form>
+
+        </table>
+    </body>
+</html>
