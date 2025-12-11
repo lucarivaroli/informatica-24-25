@@ -1,0 +1,52 @@
+<html>
+	<head>
+	<script language="javascript">
+	
+	function rosso()
+	{
+		document.bgColor="red";
+		/*var win2 = window.open("");
+			win2.document.open();
+			win2.document.bgColor="red";
+			win2.document.close();
+		*/
+		
+	}
+	function verde()
+	{	
+		document.bgColor="green";
+		/*var win2 = window.open();
+			win2.document.bgColor="green";
+			win2.document.close();
+		*/
+	}
+	function blu()
+	{
+		document.bgColor="blue";
+		var win2 = window.open("");
+			/*win2.document.open();*/
+			win2.document.bgColor="yellow";
+			win2.document.close();
+			
+	}
+	
+	</script>
+	</head>
+	<body>
+	<form name="modulo">
+	<table border=2>
+	<tr>
+		<td>
+			<img src="img1.jpg"  onclick="rosso();"  >
+		</td>
+		<td>
+			<img src="img2.jpg"  onclick="verde();" >
+		</td>
+		<td>
+			<img src="img3.jpg"  onclick="blu();" >
+		</td>
+	</tr>
+	</table>
+	</form>
+	</body>
+</html>	
