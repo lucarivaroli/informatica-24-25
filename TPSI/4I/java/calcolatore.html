@@ -1,44 +1,94 @@
 <!--creare una calcolatrice -->
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>calcolatrice</title>
-        <script>
-            let str="", str1="", op="";
-            function tasto(v){
-                str=str+v;
-                document.calc.display.value+=v;
-                str+=v
+	<head><title>INDOVINA NUMERO</title>
+		<script>
+			let str="", str1="", op="";
+			
+			function tasto(v){
+				document.calc.display.value+=v;
+				str+=v;
+			}
+
+            function operat(p){
+                op=p;       //salva l'operatore
+                document.calc.display.value="";     //pulisce il display
+                str1=eval(str);
+                str="";
+                
             }
 
-        </script>
-    </head>
-    <body>
-        <table border="3">
-            <td></td>
-                <form name="calc">
-                    <br></br>CASIO
-                    <input type="text" name="display" value="" size="26"><br></br>
-                    <table border="2">
-                        <tr>
-                            <input type="button" value="1" onclick="tasto(this.value)">
-                            <input type="button" value="2" onclick="tasto(this.value)">
-                            <input type="button" value="*" onclick="">
-                        </tr>
-                         <tr>
-                            <input type="button" value="-" onclick="">
-                        </tr>
-                         <tr>
-                            <input type="button" value="=" onclick="">
-                        </tr>
-                         <tr>
-                            <input type="button" value="0" onclick="tasto(this.value)">
-                            <input type="button" value="." onclick="tasto(this.value)">
-                        </tr>
+            function operaz(){
+                switch(op){
+                    case "*":
+                        document.calc.display.value=eval(str)*str1;
+                        break;
+                    case "+":
+                        document.calc.display.value=eval(str)+str1;
+                        break;
+                    case "/":
+                        document.calc.display.value=str1/eval(str);
+                        break;
+                    case "-":
+                        document.calc.display.value=str1-eval(str);
+                        break;
+                    
+                }
+            }
+            function pulisci(){
+                str="";
+                str1="";
+                op="";
+               
+                document.calc.display.value="";
+            }
+                
 
-                    </table>
-                </form>
-
-        </table>
-    </body>
+	
+		</script>
+	</head>
+	<body>
+		<table border=3>
+		<tr><td>
+			<form name="calc">
+			<br><br>CASIO<br><br>
+			<input type="text" name="display" value="" size="26"><br><br>
+			<table border=2>
+				<tr>
+					<input type="button" value="1" onclick="tasto(this.value);">
+					<input type="button" value="2" onclick="tasto(this.value);">
+                    <input type="button" value="3" onclick="tasto(this.value);">
+                    <br></br>
+                    <input type="button" value="4" onclick="tasto(this.value);">
+                    <input type="button" value="5" onclick="tasto(this.value);">
+                    <input type="button" value="6" onclick="tasto(this.value);">
+                    <br></br>
+                    <input type="button" value="7" onclick="tasto(this.value);">
+                    <input type="button" value="8" onclick="tasto(this.value);">
+                    <input type="button" value="9" onclick="tasto(this.value);">
+                    <br></br>
+                    <input type="button" value="0" onclick="tasto(this.value);">
+                    <input type="button" value="." onclick="tasto(this.value);">
+                    <input type="button" value="Canc" onclick="pulisci(this.value);">
+                     <br></br>
+					<input type="button" value="*" onclick="operat(this.value);">
+                    <input type="button" value="+" onclick="operat(this.value);">
+                    <input type="button" value="/" onclick="operat(this.value);">
+                    <input type="button" value="-" onclick="operat(this.value)";>
+                    <input type="button" value="=" onclick="operaz()";>
+                    <br></br>
+                    
+					
+				</tr>
+				
+			</table>
+			</form>
+		</td>
+		
+		
+		
+		</tr>
+		</table>
+	
+	</body>
 </html>

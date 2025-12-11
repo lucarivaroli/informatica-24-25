@@ -1,0 +1,60 @@
+<!--
+Realizzare una singola pagina html(+css,+javascript) con elementi di input, pulsanti 
+e div di output: l'utente agisce sugli elementi attivi e ottiene un feedback nel div di output.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>prova verifica</title>
+        <style>
+            body{
+                background-color: lightblue;
+                
+            }
+            
+        </style>
+        <script>
+
+             var dimCarattere=15;
+            function stampa(){
+                document.getElementById("output").innerHTML= messaggio.value;
+
+                
+            }
+
+            function allargaDiv(){
+                var larghezza=document.getElementById("output").offsetWidth;
+                larghezza+=20;
+                document.getElementById("output").style.width=larghezza+"px";
+            }
+
+           function rimpicciolisciDiv(){
+                larghezza=document.getElementById("output").offsetWidth;
+                larghezza-=20;
+                document.getElementById("output").style.width=larghezza+"px";
+            }
+
+        </script>
+    </head>
+    <body>
+        <form name="moduli">
+            <label>lascia un commento</label> 
+            <input type="text" id ="messaggio" name="messaggio" maxlength="200"></input>
+            <br>
+            <label>inserisci il tuo animale domestico</label> 
+            <input type="text" id ="animale" name="animale" maxlength="200"></input>
+            <br>
+            <label>inserisci residenza</label> 
+            <input type="text" id ="residenza" name="residenza" maxlength="200"></input>
+
+            <br>
+            <input type="button" value="stampa" onclick="stampa();"></input>
+            <input type ="button" value="allarga div" onclick="allargaDiv();"></input>
+            <input type ="button" value="rimpicciolisci div" onclick="rimpicciolisciDiv();"></input>
+            
+
+             <div id="output" style="width: 200px; height: 100px; border:2px solid rgb(6, 100, 131); margin-top:10px; "></div>
+        </form>
+    </body>
+
+</html>
