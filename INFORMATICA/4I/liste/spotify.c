@@ -224,9 +224,6 @@ void inserisci_canzone_playlist(Lista *lista_canzoni, Lista *playlist) {
 
 
 
-    
-
-
 void stampa_playlist(Lista* playlist) {
    /*
     Stampa tutti gli elementi della playlist, 
@@ -243,7 +240,59 @@ void stampa_playlist(Lista* playlist) {
     }while(current != playlist->testa);
 }
 
+
 void cancella_canzone_playlist(Lista *playlist) {
+    int id;
+    printf("Inserisci l'ID della canzone da cancellare dalla playlist: ");
+    scanf("%d", &id);
+    getchar(); // pulisci buffer input
+
+    if (playlist->testa == NULL) {
+        printf("Playlist vuota. Nessuna canzone da cancellare.\n");
+        return;
+    }
+
+    Canzone *current = playlist->testa;
+    Canzone *prev = NULL;
+
+    do {
+        if (current->id == id) {
+
+            /* Caso 1: un solo elemento nella playlist */
+            if (current->next == current) {
+                playlist->testa = NULL;
+            }
+            /* Caso 2: si elimina la testa (più elementi) */
+            else if (current == playlist->testa) {
+                Canzone *ultimo = playlist->testa;
+                while (ultimo->next != playlist->testa) {
+                    ultimo = ultimo->next;
+                }
+                playlist->testa = current->next;
+                ultimo->next = playlist->testa;
+            }
+            /* Caso 3: nodo interno o ultimo */
+            else {
+                prev->next = current->next;
+            }
+
+            free(current);
+            playlist->lunghezza--;
+
+            printf("Canzone eliminata dalla playlist.\n");
+            return;
+        }
+
+        prev = current;
+        current = current->next;
+
+    } while (current != playlist->testa);
+
+    printf("ID %d non trovato nella playlist.\n", id);
+}
+    
+
+
 
 
 }
