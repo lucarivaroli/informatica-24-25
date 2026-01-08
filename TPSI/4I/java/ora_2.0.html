@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+        <script>
+            function mostraOra(){
+                let d = new Date();
+                var ora = d.toLocaleTimeString();
+
+                document.getElementById("zonaOra").innerHTML += "<p>l'ora attuale e: " + ora + "</p>";
+                
+            }
+
+            function togliOra(){
+                document.getElementById("zonaOra").innerHTML = "";
+            }
+        </script>
+    </head>
+
+    <body>
+        <form>
+            <input type="button" onclick="mostraOra();" value="che ora è">
+            <input type="button" onclick="togliOra();" value="togli ora">
+        </form>
+
+        <div id="zonaOra"></div>
+    </body>
+</html>

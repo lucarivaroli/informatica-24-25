@@ -10,6 +10,15 @@ fuction indovina(){
 <html>
   <head>
     <title>indovina numeri</title>
+      <style>
+          #messaggio{
+              font-size: 30px;
+              font-weight: bold;
+              text-align: center;
+              margin-top: 50px;
+              display: none;
+          }
+      </style>
     <script>
       var ind=12;
       function resetta(){
@@ -26,6 +35,11 @@ fuction indovina(){
         if(Math.abs(parseFloat(document.getElementById("num1").value)-ind)<5){
             document.bgColor="yellow";
         }
+        if(parseFloat(document.getElementById("num1").value) === ind){
+        document.bgColor = "violet";
+        document.getElementById("messaggio").style.display = "block";
+        }
+
       
       }
     </script>
@@ -33,6 +47,7 @@ fuction indovina(){
 
   </head>
   <body>
+    <div id="messaggio">Hai indovinato!</div>
     <h2>indovina numero</h2>
     
     <input type="text" id="num1" >&nbsp;&nbsp;&nbsp;&nbsp;
