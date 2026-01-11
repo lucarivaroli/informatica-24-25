@@ -258,11 +258,11 @@ void cancella_canzone_playlist(Lista *playlist) {
     do {
         if (current->id == id) {
 
-            /* Caso 1: un solo elemento nella playlist */
+            //plylist con un solo elemento
             if (current->next == current) {
                 playlist->testa = NULL;
             }
-            /* Caso 2: si elimina la testa (più elementi) */
+            
             else if (current == playlist->testa) {
                 Canzone *ultimo = playlist->testa;
                 while (ultimo->next != playlist->testa) {
@@ -271,7 +271,7 @@ void cancella_canzone_playlist(Lista *playlist) {
                 playlist->testa = current->next;
                 ultimo->next = playlist->testa;
             }
-            /* Caso 3: nodo interno o ultimo */
+           //canzone in mezzo o alla fine
             else {
                 prev->next = current->next;
             }
@@ -292,7 +292,3 @@ void cancella_canzone_playlist(Lista *playlist) {
 }
     
 
-
-
-
-}
