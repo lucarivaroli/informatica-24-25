@@ -10,6 +10,7 @@ typedef struct {
     char cognome[20];
     char classe[3];
     int matricola;//1000-9999
+    int n_certificazioni
 }studente;
 
 typedef struct{
@@ -48,5 +49,18 @@ void inserisciCertificazioni(certificazioni *cert, int m){
 }
 
 int main(){
+    struct studente *studenti;
+    struct certificazioni *cert;
+    int n=3;
+    //inserimento dei dati
+    studenti= (studente*) malloc (n*sizeof(studente));
+    certificazioni= (certificazioni*) malloc (n*sizeof(certificazioni));
+
+    if(studenti==NULL || cert==NULL){
+        printf("errore di allocazione");
+        return 1;
+    }
+
+
 
 }
