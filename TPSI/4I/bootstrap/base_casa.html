@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- QUI SCRIVI: titolo della scheda -->
+    <title>TITOLO SCHEDA</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <style>
+        body {
+             background-color: #a0bedb;
+            
+        }
+    </style>
+
+    <!-- NAVBAR CON MENU -->
+    <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container-fluid">
+
+            <!-- QUI SCRIVI: nome sito -->
+            <a class="navbar-brand text-white" href="#">NOME SITO</a>
+
+            <!-- bottone menu telefono -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- QUI SCRIVI: voci del menu -->
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">SERVIZI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">CONTATTI</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!-- ALERT / MESSAGGIO IN ALTO -->
+    <div class="container mt-4">
+
+        <!-- QUI SCRIVI: messaggio importante -->
+        <div class="alert alert-warning" role="alert">
+            benvenuti tutti all'interno del nostro sito, siamo felici di avervi qui!
+        </div>
+
+    </div>
+
+
+    <!-- TITOLO + DESCRIZIONE -->
+    <div class="container text-center my-5">
+
+        <!-- QUI SCRIVI: titolo principale -->
+        <h1>TITOLO PRINCIPALE</h1>
+
+        <!-- QUI SCRIVI: descrizione -->
+        <p class="lead">
+            DESCRIZIONE DEL SITO O DEL SERVIZIO
+        </p>
+
+        <!-- QUI SCRIVI: bottoni -->
+        <button class="btn btn-primary">BOTTONE 1</button>
+        <button class="btn btn-success">BOTTONE 2</button>
+
+    </div>
+
+
+    <!-- CARD + FORM AFFIANCATI -->
+    <div class="container">
+        <div class="row">
+
+            <!-- COLONNA CARD -->
+            <div class="col">
+
+                <!-- CARD 1 -->
+                <div class="card mb-3">
+
+                    <!-- QUI SCRIVI: immagine card 1 -->
+                    <img src="immagini/immagine1.jpg" class="card-img-top" alt="IMMAGINE 1">
+
+                    <div class="card-body">
+
+                        <!-- QUI SCRIVI: titolo card 1 -->
+                        <h5 class="card-title">TITOLO CARD 1</h5>
+
+                        <!-- QUI SCRIVI: testo card 1 -->
+                        <p class="card-text">
+                            TESTO DESCRITTIVO CARD 1
+                        </p>
+
+                        <!-- QUI SCRIVI: bottone card 1 -->
+                        <a href="#" class="btn btn-danger">AZIONE 1</a>
+
+                    </div>
+                </div>
+
+
+                <!-- CARD 2 -->
+                <div class="card">
+
+                    <!-- QUI SCRIVI: immagine card 2 -->
+                    <img src="immagini/immagine2.jpg" class="card-img-top" alt="IMMAGINE 2">
+
+                    <div class="card-body">
+
+                        <!-- QUI SCRIVI: titolo card 2 -->
+                        <h5 class="card-title">TITOLO CARD 2</h5>
+
+                        <!-- QUI SCRIVI: testo card 2 -->
+                        <p class="card-text">
+                            TESTO DESCRITTIVO CARD 2
+                        </p>
+
+                        <!-- QUI SCRIVI: bottone card 2 -->
+                        <a href="#" class="btn btn-warning">AZIONE 2</a>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- COLONNA FORM -->
+            <div class="col">
+
+                <!-- QUI SCRIVI: titolo form -->
+                <h3>FORM DI CONTATTO</h3>
+
+                <form>
+
+                    <!-- QUI SCRIVI: campo nome -->
+                    <div class="mb-3">
+                        <label class="form-label">NOME</label>
+                        <input type="text" class="form-control" placeholder="SCRIVI IL NOME">
+                    </div>
+
+                    <!-- QUI SCRIVI: campo email -->
+                    <div class="mb-3">
+                        <label class="form-label">EMAIL</label>
+                        <input type="email" class="form-control" placeholder="SCRIVI EMAIL">
+                    </div>
+
+                    <!-- QUI SCRIVI: scelta -->
+                    <div class="mb-3">
+                        <label class="form-label">SCELTA</label>
+                        <select class="form-select">
+                            <option>OPZIONE 1</option>
+                            <option>OPZIONE 2</option>
+                            <option>OPZIONE 3</option>
+                        </select>
+                    </div>
+
+                    <!-- QUI SCRIVI: messaggio -->
+                    <div class="mb-3">
+                        <label class="form-label">MESSAGGIO</label>
+                        <textarea class="form-control" rows="3" placeholder="SCRIVI UN MESSAGGIO"></textarea>
+                    </div>
+
+                    <!-- QUI SCRIVI: bottone form -->
+                    <button class="btn btn-primary">INVIA</button>
+
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- FOOTER SEMPLICE -->
+    <div class="container-fluid bg-dark text-white text-center mt-5 p-3">
+
+        <!-- QUI SCRIVI: testo finale -->
+        TESTO FINALE / FOOTER
+
+    </div>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
